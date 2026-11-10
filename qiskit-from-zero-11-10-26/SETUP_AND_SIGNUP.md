@@ -94,11 +94,17 @@ The free **Open Plan** gives you **10 minutes of real quantum-computer time ever
 Your API key works like a password. Anyone who has it can use your free minutes.
 - **Never** paste it into a notebook you share, screenshot or upload.
 - **On Colab:** click the 🔑 **Secrets** icon on the left → **Add new secret** → name it `IBM_QUANTUM_TOKEN` → paste your key → turn on **Notebook access**. Notebook 04 finds it automatically.
-- **On your laptop:** run this once (with your real key), and Qiskit remembers it:
-  ```python
-  from qiskit_ibm_runtime import QiskitRuntimeService
-  QiskitRuntimeService.save_account(token="YOUR-KEY", set_as_default=True, overwrite=True)
-  ```
+- **On your laptop:** save your key once in a terminal, not in a notebook. Then Qiskit remembers it. Do this after you finish Option B.
+  1. Open a terminal in the workshop folder and turn on the virtual environment (Option B, steps 2 and 3).
+  2. Type `python` and press **Enter**. You should see `>>>`.
+  3. Paste these two lines. Replace `YOUR-KEY` with your real key and press **Enter**:
+     ```python
+     from qiskit_ibm_runtime import QiskitRuntimeService
+     QiskitRuntimeService.save_account(token="YOUR-KEY", set_as_default=True, overwrite=True)
+     ```
+  4. Type `exit()` and press **Enter**.
+
+  Notebook 04 now finds your key automatically. Only do this on your own computer.
 - **If you shared it by mistake:** delete the key on the IBM Quantum Home page and create a new one.
 
 ---
