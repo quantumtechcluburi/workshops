@@ -69,6 +69,7 @@ No account? Use `from qiskit_ibm_runtime.fake_provider import FakeKingston; back
 - Free Open Plan = **10 min / 28 days** of QPU time. Never put real-hardware calls in a big loop; send many circuits in **one** job instead: `sampler.run([c1, c2, c3])`.
 
 ## Links
+- Workshop notebooks & materials: <https://github.com/quantumtechcluburi/workshops>
 - Platform & account: <https://quantum.cloud.ibm.com>
 - Composer (drag & drop): <https://quantum.cloud.ibm.com/composer>
 - Free courses: <https://quantum.cloud.ibm.com/learning>
